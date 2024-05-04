@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    background-color: darkgray;
+}
+
+header{
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+}
+
+header > nav {
+    background-color: blueviolet;
+    padding: 5px;
+    box-shadow: 1px 1px 1px rgba(1, 2, 1, 0.495);
+}
+
+header > nav > a {
+    color: red;
+    text-decoration: none;
+}
+
+main{
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 33px;
+}
+
+article > p {
+    background-color: aqua;
+    padding: 5px;
+}
+
+footer{
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    padding: 1px;
+}
+
+footer > p {
+    margin: 0px;
+}
