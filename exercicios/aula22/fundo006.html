@@ -6,18 +6,33 @@
     <title>Criando fundo de Imagens</title>
     <style>
         body{
+            height: 98vh;
+
+            /*
             background-color: black;
             background-image: url("imagens/wallpaper003.jpg");
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment:fixed;
+            */
+
+            /*
+                Shorthand - background
+                color > image > position > repeat > [size] > attachment
+
+            */
+
+            background: black url("imagens/wallpaper003.jpg") center center no-repeat fixed;
             background-size: cover;
         }
 
         main{
             background-color: skyblue;
             font-size: 1.3em;
+            text-align: justify;
             padding: 10px;
-            width: 400px;
+            max-width: 700px;
             border: 1px dashed black;
             border-radius: 10px;
             margin: auto;
@@ -27,7 +42,11 @@
 <body>
     <main>
         <h1>Fundo de imagens</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae minus deleniti officia repudiandae. Explicabo porro totam quod vitae atque beatae ad tempora unde neque deserunt. Recusandae maiores quidem magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi beatae ducimus quam quisquam sit sequi rem ipsam in, recusandae necessitatibus magni quibusdam veritatis et. Et qui quasi labore optio blanditiis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae minus deleniti officia repudiandae. Explicabo porro totam quod vitae atque beatae ad tempora unde neque deserunt. Recusandae maiores quidem magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi beatae ducimus quam quisquam sit sequi rem ipsam in, recusandae necessitatibus magni quibusdam veritatis et. Et qui quasi labore optio blanditiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, minus quisquam numquam quam natus quod dolorem maxime distinctio optio, deserunt adipisci eligendi. Similique et officiis inventore consequuntur aperiam cupiditate modi!
+        Earum explicabo aut dolorem iure similique, facilis quod fuga iusto totam deserunt. Necessitatibus obcaecati magnam iure reprehenderit non veritatis assumenda unde optio, nostrum dolorem rem cumque ad architecto sint totam.
+        Harum dolorem dolor, ut sequi, tempore molestiae neque animi, exercitationem cupiditate sed similique voluptatibus mollitia consectetur non sit dolorum eaque recusandae accusamus incidunt. Minima dignissimos illo corporis porro provident minus?
+        Dignissimos, voluptate consequuntur amet dolorum dolores, earum consectetur impedit eius quasi vel dolor animi quo enim unde illum pariatur necessitatibus beatae voluptatibus fuga sunt nam quos. Velit eveniet placeat unde?
+        Voluptates harum veritatis minus dolorem ut. Voluptate accusamus fuga modi. Reiciendis eaque fugiat quo obcaecati blanditiis? Laudantium commodi, sit pariatur facilis mollitia quo architecto quaerat in earum recusandae quis illo.</p>
     </main>
 </body>
 </html>
