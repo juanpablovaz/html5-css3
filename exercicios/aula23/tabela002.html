@@ -10,20 +10,58 @@
             background-color: cadetblue;
             background-position: 97vh;
         }
-        h1, table{
+        h1{
             width: 400px;
             margin: auto;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        table{
+            width: 400px;
+            margin: auto;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        caption{
+            color: black;
+            font-weight: bolder;
+            background-color: rgb(222, 160, 135);
+            padding: 5px;
+            border: 1px solid black;
         }
         td, th{
             border: 1px solid black;
             padding: 3px;
-            border-collapse: collapse;
         }
 
         thead, tfoot{
             background-color: blueviolet;
             color: bisque;
         }
+
+        thead > tr > th {  /* Isso faz o titulo Estado e População grudarem na tabela. Devemos colocar  na tabela uma posição relativa*/
+            position: sticky;
+            top: -1px;
+            background-color: blueviolet; ;
+        }
+
+        tbody > tr:nth-child(odd){ /* 2n-1*/
+            background-color: brown;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(even){ /* 2n*/
+            background-color: chartreuse;
+            text-decoration: underline;
+        }
+          /*
+                odd - impar
+                even - par
+                2n
+                2n-1
+            */
+
     </style>
 </head>
 <body>
@@ -39,13 +77,18 @@
                 TFOOT
                     tr, td, th
      -->
-
+    <!-- 
+        caption   -  Legenda de uma tabela
+     -->
+     
+     
      <table>
-
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <!-- para dizer que esse th é um titulo, mas o dados está na coluna, usamos o scope "col" -->
             </tr>
         </thead>
 
@@ -62,11 +105,75 @@
                 <td>Rio de Janeiro</td>
                 <td>17 264 491</td>
             </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 491</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td> 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td> 4 264 491</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                 <th scope="row"   >Total de Habitantes</th>  <!-- para dizer que esse th é um titulo, mas o dados está na linha, usamos o scope "row" -->
                 <td>00000</td>
             </tr>
         </tfoot>
